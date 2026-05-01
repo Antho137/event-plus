@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from '../assets/logo1.jpg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ const Header = () => {
     <nav className="bg-blue-100 w-full fixed top-0 z-10 p-4 sm:px-10 lg:px-25">
       <div className="flex flex justify-between items-center">
         <div className="flex flex justify-between items-center gap-0.5">
-          <img src="/logo1.jpg" alt="Event logo" />
+          <img src={logo} alt="Event logo" />
           <h1 className="text-blue-900 font-medium text-xl md:text-xl">
             Event Plus
           </h1>          
